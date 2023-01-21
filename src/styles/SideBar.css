@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  #modalSidebar {
-    /* @apply absolute top-0 z-20 flex h-screen w-screen bg-sidebar */
-  }
-}
