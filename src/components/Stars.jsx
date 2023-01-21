@@ -5,6 +5,7 @@ export const Stars = () => {
     <div
       className="stars-container"
       style={{
+        pointerEvents: "none",
         position: "absolute",
         width: "100%",
         height: "100vh",
