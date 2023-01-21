@@ -1,4 +1,5 @@
-import { Presentation } from "./Presentation.jsx";
 import { Stars } from "./Stars.jsx";
+import { Menu } from "./Menu.jsx";
+import { Presentation } from "./Presentation.jsx";
 
-export { Presentation, Stars };
+export { Stars, Menu, Presentation };

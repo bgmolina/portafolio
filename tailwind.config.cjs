@@ -12,6 +12,7 @@ module.exports = {
 
       backgroundColor: (theme) => ({
         ...theme("colors"),
+        sidebar: "#1E293B",
       }),
     },
     fontFamily: {

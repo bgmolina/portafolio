@@ -1,11 +1,3 @@
-.stars-container {
-  position: absolute;
-  width: 100%;
-  height: 50vh;
-  z-index: 100;
-  overflow-x: clip;
-}
-
 .star {
   position: absolute;
   width: 5px;
@@ -23,6 +15,7 @@
   animation-play-state: running;
   animation-name: stars;
 }
+
 .star::before {
   content: "";
   position: absolute;
@@ -47,32 +40,4 @@
     transform: rotate(315deg) translate(-1600px);
     opacity: 0;
   }
-}
-
-.star1 {
-  right: 50%;
-  animation-duration: 19s;
-}
-.star2 {
-  right: 30%;
-  animation-duration: 14s;
-}
-.star3 {
-  right: -10%;
-  animation-duration: 19s;
-}
-.star4 {
-  right: -40%;
-  animation-duration: 18s;
-}
-
-.star5 {
-  top: 100%;
-  right: -1%;
-  animation-duration: 17s;
-}
-.star6 {
-  top: 100%;
-  right: -50%;
-  animation-duration: 16s;
 }
