@@ -10,7 +10,8 @@ export const Projects = () => {
       </section>
 
       {/* Cards */}
-      <section className="flex flex-wrap justify-center gap-2.5">
+      {/* <section className="flex flex-wrap justify-center gap-2.5"> */}
+      <section className="mx-auto flex h-[298px] w-[280px] flex-col flex-wrap gap-2.5 overflow-hidden overflow-x-scroll">
         <Card tittle="Buzón de correo" cardImage={1} vertical={false} />
         <Card tittle="Viajes" cardImage={2} vertical={false} />
         <Card tittle="To do list" cardImage={3} vertical={true} />

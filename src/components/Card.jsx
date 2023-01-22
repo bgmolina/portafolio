@@ -5,7 +5,7 @@ export const Card = (props) => {
   const { tittle, cardImage, vertical } = props;
 
   return (
-    <section className="h-36 w-60">
+    <section className="h-36 w-60 flex-none">
       {/* Background image */}
       <div
         className={`h-3/4 rounded-t-2xl ${getOrienBGImage(
