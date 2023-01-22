@@ -1,5 +1,5 @@
 import "./App.css";
-import { Presentation, Stars, Menu } from "./components";
+import { Presentation, Stars, Menu, Projects } from "./components";
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <Stars />
       <Menu />
       <Presentation />
+      <Projects />
     </>
   );
 }

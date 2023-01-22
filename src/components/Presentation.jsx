@@ -1,4 +1,5 @@
 import "../styles/Presentation.css";
+import { monitor } from "../img";
 
 export const Presentation = () => {
   const position = "<>Desarrollador Web</>";
@@ -21,6 +22,7 @@ export const Presentation = () => {
       </div>
       <p className="text-6xl font-medium text-white">Braian</p>
       <p className="pt-2.5 text-2xl font-semibold text-position">{position}</p>
+      <img src={monitor} className="w-64 pt-10" />
     </section>
   );
 };
