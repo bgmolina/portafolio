@@ -25,10 +25,18 @@ export const SideBar = (props) => {
                 <img src={salir} onClick={onClickSideBar} />
               </figure>
               <div className="flex flex-col items-center gap-y-10 pt-5 text-4xl text-white">
-                <span>Inicio</span>
-                <span>Proyectos</span>
-                <span>Habilidades</span>
-                <span>Contacto</span>
+                <a href="#" onClick={onClickSideBar}>
+                  Inicio
+                </a>
+                <a href="#idProjects" onClick={onClickSideBar}>
+                  Proyectos
+                </a>
+                <a href="#idSkills" onClick={onClickSideBar}>
+                  Habilidades
+                </a>
+                <a href="#idContact" onClick={onClickSideBar}>
+                  Contacto
+                </a>
               </div>
             </motion.aside>
           )}

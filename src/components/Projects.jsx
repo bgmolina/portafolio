@@ -4,7 +4,7 @@ export const Projects = () => {
   return (
     <>
       {/* Tittle */}
-      <Tittle value="Proyectos" />
+      <Tittle idValue="idProjects" value="Proyectos" />
 
       {/* Cards */}
       <section className={`flex w-full justify-center px-5`}>

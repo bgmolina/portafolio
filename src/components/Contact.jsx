@@ -5,7 +5,7 @@ import "../styles/Contact.css";
 export const Contact = () => {
   return (
     <>
-      <Tittle value="Contacto" />
+      <Tittle idValue="idContact" value="Contacto" />
 
       <section className="flex flex-row justify-center gap-x-5">
         <figure className="contactIcon">

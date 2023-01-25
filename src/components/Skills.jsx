@@ -20,7 +20,7 @@ import {
 export const Skills = () => {
   return (
     <>
-      <Tittle value="Habilidades" />
+      <Tittle idValue="idSkills" value="Habilidades" />
 
       {/* habilidades */}
       <section className={`flex w-full justify-center px-5`}>
