@@ -19,6 +19,9 @@ module.exports = {
       colors: {
         position: "#2CB67D",
       },
+      borderColor: {
+        tech: "#293548",
+      },
 
       backgroundColor: (theme) => ({
         ...theme("colors"),
