@@ -6,6 +6,7 @@ import { Card } from "./Card.jsx";
 import { Skills } from "./Skills.jsx";
 import { Tittle } from "./Tittle.jsx";
 import { Technology } from "./Technology.jsx";
+import { Contact } from "./Contact.jsx";
 
 export {
   Stars,
@@ -16,4 +17,5 @@ export {
   Skills,
   Tittle,
   Technology,
+  Contact,
 };

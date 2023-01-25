@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .contactIcon {
+    @apply flex h-16 w-16 items-center justify-center rounded-full bg-contact
+  };
+
+  .contactIcon img {
+    @apply w-[25px] h-[25px]
+  }
+}

@@ -28,6 +28,7 @@ module.exports = {
         sidebar: "#1E293B",
         barTittle: "#2C66C3",
         tittleCard: "#293548",
+        contact: "#161B22",
       }),
       dropShadow: {
         barTittle: "0 0 14px rgba(44, 102, 195, 0.5)",
