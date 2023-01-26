@@ -1,4 +1,6 @@
+import React from "react";
 import { Card, Tittle } from "../components";
+import { ProjectCard } from "../modals";
 
 export const Projects = () => {
   return (
@@ -17,6 +19,9 @@ export const Projects = () => {
           <Card tittle="Datos inmobiliarios" cardImage={4} vertical={true} />
         </section>
       </section>
+
+      {/* modal */}
+      <ProjectCard />
     </>
   );
 };

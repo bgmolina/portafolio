@@ -1,9 +1,12 @@
+import { useContext } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { createPortal } from "react-dom";
+import { GlobalContext } from "../Context";
 import { salir } from "../img";
 
-export const SideBar = (props) => {
-  const { showSideBar, onClickSideBar } = props;
+export const SideBar = () => {
+  //global context
+  const { showSideBar, onClickSideBar } = useContext(GlobalContext);
 
   return (
     <>

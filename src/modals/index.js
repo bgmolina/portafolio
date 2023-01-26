@@ -1,3 +1,4 @@
 import { SideBar } from "./SideBar.jsx";
+import { ProjectCard } from "./ProjectCard.jsx";
 
-export { SideBar };
+export { SideBar, ProjectCard };

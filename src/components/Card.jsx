@@ -1,13 +1,19 @@
+import { useContext } from "react";
+import { GlobalContext } from "../Context";
 import { getBGImage, getOrienBGImage } from "../utils";
 import { eye } from "../img";
 
 export const Card = (props) => {
   const { tittle, cardImage, vertical } = props;
 
+  //global context
+  const { onClickModal } = useContext(GlobalContext);
+
   return (
     <section className="h-36 w-60">
       {/* Background image */}
       <div
+        onClick={onClickModal}
         className={`h-3/4 rounded-t-2xl ${getOrienBGImage(
           vertical
         )} ${getBGImage(cardImage)}`}

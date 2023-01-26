@@ -1,26 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { menu } from "../img";
 import { SideBar } from "../modals";
+import { GlobalContext } from "../Context";
 
 export const Menu = () => {
-  //-------
-  //estados
-  //-------
-  const [showSideBar, setShowSideBar] = React.useState(false);
-
-  //---------
-  //funciones
-  //---------
-  const onClickSideBar = () => {
-    setShowSideBar(!showSideBar);
-  };
+  //global context
+  const { onClickSideBar } = useContext(GlobalContext);
 
   return (
     <>
       <figure className="w-full pl-5 pt-5">
         <img id="idMenu" onClick={onClickSideBar} src={menu} />
       </figure>
-      <SideBar showSideBar={showSideBar} onClickSideBar={onClickSideBar} />
+      <SideBar />
     </>
   );
 };
