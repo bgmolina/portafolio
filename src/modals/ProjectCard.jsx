@@ -4,13 +4,18 @@ import { createPortal } from "react-dom";
 import { GlobalContext } from "../Context";
 
 export const ProjectCard = () => {
-  //global context
-  const { showModal } = useContext(GlobalContext);
+  //---------------
+  // global context
+  //---------------
+  const { showModal, onClickShowModal } = useContext(GlobalContext);
 
   return createPortal(
     <AnimatePresence>
       {showModal && (
-        <section className="fixed top-0 z-30 flex h-screen w-screen flex-col items-center justify-end bg-black bg-opacity-50">
+        <section
+          onClick={onClickShowModal}
+          className="fixed top-0 z-30 flex h-screen w-screen flex-col items-center justify-end bg-black bg-opacity-50"
+        >
           <motion.section
             initial={{ y: "100%" }}
             animate={{
@@ -36,7 +41,7 @@ export const ProjectCard = () => {
               <h1 className="text-center text-xl font-medium">
                 Buzón de correo
               </h1>
-              <p>
+              <p className="line-clamp-2">
                 Diseño responsivo para leer cada correo recibido por usuario
                 desde el BackEnd
               </p>

@@ -4,7 +4,9 @@ import { SideBar } from "../modals";
 import { GlobalContext } from "../Context";
 
 export const Menu = () => {
-  //global context
+  //---------------
+  // global context
+  //---------------
   const { onClickShowSideBar } = useContext(GlobalContext);
 
   return (

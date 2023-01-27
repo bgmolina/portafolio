@@ -6,7 +6,9 @@ import { eye } from "../img";
 export const Card = (props) => {
   const { tittle, cardImage, vertical } = props;
 
-  //global context
+  //---------------
+  // global context
+  //---------------
   const { onClickShowModal } = useContext(GlobalContext);
 
   return (

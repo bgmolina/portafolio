@@ -38,5 +38,5 @@ module.exports = {
       roboto: ["Roboto", "sans-serif", "Segoe UI", "Ubuntu"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };

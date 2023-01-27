@@ -5,7 +5,9 @@ import { GlobalContext } from "../Context";
 import { salir } from "../img";
 
 export const SideBar = () => {
-  //global context
+  //---------------
+  // global context
+  //---------------
   const { showSideBar, onClickShowSideBar } = useContext(GlobalContext);
 
   return createPortal(
