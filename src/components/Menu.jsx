@@ -5,12 +5,12 @@ import { GlobalContext } from "../Context";
 
 export const Menu = () => {
   //global context
-  const { onClickSideBar } = useContext(GlobalContext);
+  const { onClickShowSideBar } = useContext(GlobalContext);
 
   return (
     <>
       <figure className="w-full pl-5 pt-5">
-        <img id="idMenu" onClick={onClickSideBar} src={menu} />
+        <img id="idMenu" onClick={onClickShowSideBar} src={menu} />
       </figure>
       <SideBar />
     </>

@@ -12,12 +12,22 @@ export const GlobalProvider = (props) => {
   //---------
   //funciones
   //---------
-  const onClickSideBar = () => {
+  const activeDisableBodyScrollY = () => {
+    const body = document.querySelector("body");
+
+    !body.style.overflowY
+      ? (body.style.overflowY = "hidden")
+      : body.removeAttribute("style");
+  };
+
+  const onClickShowSideBar = () => {
     setShowSideBar((prevState) => !prevState);
+    activeDisableBodyScrollY();
   }; //[menu mobile]
 
-  const onClickModal = () => {
+  const onClickShowModal = () => {
     setShowModal((prevState) => !prevState);
+    activeDisableBodyScrollY();
   }; //[card detalle mobile]
 
   //-------------
@@ -25,7 +35,12 @@ export const GlobalProvider = (props) => {
   //-------------
   return (
     <GlobalContext.Provider
-      value={{ showModal, onClickModal, showSideBar, onClickSideBar }}
+      value={{
+        showModal,
+        onClickShowModal,
+        showSideBar,
+        onClickShowSideBar,
+      }}
     >
       {props.children}
     </GlobalContext.Provider>

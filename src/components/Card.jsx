@@ -7,13 +7,13 @@ export const Card = (props) => {
   const { tittle, cardImage, vertical } = props;
 
   //global context
-  const { onClickModal } = useContext(GlobalContext);
+  const { onClickShowModal } = useContext(GlobalContext);
 
   return (
     <section className="h-36 w-60">
       {/* Background image */}
       <div
-        onClick={onClickModal}
+        onClick={onClickShowModal}
         className={`h-3/4 rounded-t-2xl ${getOrienBGImage(
           vertical
         )} ${getBGImage(cardImage)}`}
