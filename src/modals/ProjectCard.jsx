@@ -20,9 +20,27 @@ export const ProjectCard = () => {
               y: "100%",
             }}
             transition={{ type: "just", bounce: 0, duration: 0.3 }}
-            className="flex h-52 w-52 bg-emerald-500 text-white"
+            className="flex w-full flex-col gap-5 rounded-t-xl bg-sidebar pb-5 text-white"
           >
-            PRUEBA
+            <div className="flex flex-col gap-2.5">
+              {/* line top modal */}
+              <div className="flex h-5 w-full items-center justify-center">
+                <span className="h-1 w-20 rounded-full bg-slate-300"></span>
+              </div>
+              {/* images */}
+              <figure className="h-40 w-full bg-teal-700"></figure>
+            </div>
+
+            {/* info project */}
+            <article className="px-5">
+              <h1 className="text-center text-xl font-medium">
+                Buzón de correo
+              </h1>
+              <p>
+                Diseño responsivo para leer cada correo recibido por usuario
+                desde el BackEnd
+              </p>
+            </article>
           </motion.section>
         </section>
       )}
