@@ -37,8 +37,14 @@ export const ProjectCard = () => {
               <div className="flex h-5 w-full items-center justify-center">
                 <span className="h-1 w-20 rounded-full bg-slate-300"></span>
               </div>
+
               {/* images */}
-              <figure className="h-40 w-full bg-teal-700"></figure>
+              <section className="flex h-52 w-full flex-col flex-wrap overflow-x-scroll">
+                <div className="flex h-full w-full bg-[url(../../public/mailboxDesktop.png)] bg-contain bg-center bg-no-repeat"></div>
+                <div className="flex h-full w-full bg-[url(../../public/mailboxMobile.png)] bg-contain bg-center bg-no-repeat"></div>
+                <div className="flex h-full w-full bg-[url(../../public/mailboxJson.png)] bg-contain bg-center bg-no-repeat"></div>
+                <div className="flex h-full w-full bg-[url(../../public/mailboxDesktop.gif)] bg-contain bg-center bg-no-repeat"></div>
+              </section>
             </div>
 
             {/* info project */}
@@ -52,7 +58,7 @@ export const ProjectCard = () => {
               </p>
             </article>
 
-            {/* botones */}
+            {/* buttons */}
             <section className="flex flex-col gap-2.5 px-5">
               <a
                 href="#"
