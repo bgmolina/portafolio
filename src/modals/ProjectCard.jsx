@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { createPortal } from "react-dom";
 import { GlobalContext } from "../Context";
+import { gitHub, www } from "../img";
 
 export const ProjectCard = () => {
   //---------------
@@ -12,10 +13,14 @@ export const ProjectCard = () => {
   return createPortal(
     <AnimatePresence>
       {showModal && (
-        <section
-          onClick={onClickShowModal}
-          className="fixed top-0 z-30 flex h-screen w-screen flex-col items-center justify-end bg-black bg-opacity-50"
-        >
+        <section className="fixed top-0 z-30 flex h-screen w-screen flex-col items-center justify-end bg-black bg-opacity-50">
+          {/* cierra modal */}
+          <section
+            onClick={onClickShowModal}
+            className="mb-4 flex h-full w-full"
+          ></section>
+
+          {/* modal info */}
           <motion.section
             initial={{ y: "100%" }}
             animate={{
@@ -46,6 +51,24 @@ export const ProjectCard = () => {
                 desde el BackEnd
               </p>
             </article>
+
+            {/* botones */}
+            <section className="flex flex-col gap-2.5 px-5">
+              <a
+                href="#"
+                className="flex h-11 items-center justify-center gap-2.5 rounded-md bg-contact text-xl"
+              >
+                <img width={26} height={26} src={gitHub} alt="GitHub" />
+                Repositorio
+              </a>
+              <a
+                href="#"
+                className="flex h-11 items-center justify-center gap-2.5 rounded-md bg-contact text-xl"
+              >
+                <img width={26} height={26} src={www} alt="Pagina web" />
+                Demo
+              </a>
+            </section>
           </motion.section>
         </section>
       )}
