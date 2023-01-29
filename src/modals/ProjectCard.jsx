@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { createPortal } from "react-dom";
 import { GlobalContext } from "../Context";
@@ -18,7 +18,7 @@ export const ProjectCard = () => {
           {/* cierra modal */}
           <section
             onClick={onClickShowModal}
-            className="mb-4 flex h-full w-full"
+            className="flex h-full w-full"
           ></section>
 
           {/* modal info */}
@@ -70,14 +70,16 @@ export const ProjectCard = () => {
                 <img width={26} height={26} src={gitHub} alt="GitHub" />
                 Repositorio
               </a>
-              <a
-                href={detailProject.demo}
-                target="_blank"
-                className="flex h-11 items-center justify-center gap-2.5 rounded-md bg-contact text-xl"
-              >
-                <img width={26} height={26} src={www} alt="Pagina web" />
-                Demo
-              </a>
+              {detailProject.demo && (
+                <a
+                  href={detailProject.demo}
+                  target="_blank"
+                  className="flex h-11 items-center justify-center gap-2.5 rounded-md bg-contact text-xl"
+                >
+                  <img width={26} height={26} src={www} alt="Pagina web" />
+                  Demo
+                </a>
+              )}
             </section>
           </motion.section>
         </section>
