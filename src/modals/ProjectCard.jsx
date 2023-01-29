@@ -8,7 +8,8 @@ export const ProjectCard = () => {
   //---------------
   // global context
   //---------------
-  const { showModal, onClickShowModal } = useContext(GlobalContext);
+  const { showModal, onClickShowModal, detailProject } =
+    useContext(GlobalContext);
 
   return createPortal(
     <AnimatePresence>
@@ -40,35 +41,38 @@ export const ProjectCard = () => {
 
               {/* images */}
               <section className="flex h-52 w-full flex-col flex-wrap overflow-x-scroll">
-                <div className="flex h-full w-full bg-[url(../../public/mailboxDesktop.png)] bg-contain bg-center bg-no-repeat"></div>
-                <div className="flex h-full w-full bg-[url(../../public/mailboxMobile.png)] bg-contain bg-center bg-no-repeat"></div>
-                <div className="flex h-full w-full bg-[url(../../public/mailboxJson.png)] bg-contain bg-center bg-no-repeat"></div>
-                <div className="flex h-full w-full bg-[url(../../public/mailboxDesktop.gif)] bg-contain bg-center bg-no-repeat"></div>
+                {detailProject.bgImages.map((bgImage, index) => (
+                  <div
+                    key={index}
+                    className={`flex h-full w-full ${bgImage} bg-contain bg-center bg-no-repeat`}
+                  ></div>
+                ))}
               </section>
             </div>
 
             {/* info project */}
             <article className="px-5">
               <h1 className="text-center text-xl font-medium">
-                Buzón de correo
+                {detailProject.title}
               </h1>
-              <p className="line-clamp-2">
-                Diseño responsivo para leer cada correo recibido por usuario
-                desde el BackEnd
+              <p className="text-center line-clamp-2">
+                {detailProject.description}
               </p>
             </article>
 
             {/* buttons */}
             <section className="flex flex-col gap-2.5 px-5">
               <a
-                href="#"
+                href={detailProject.repository}
+                target="_blank"
                 className="flex h-11 items-center justify-center gap-2.5 rounded-md bg-contact text-xl"
               >
                 <img width={26} height={26} src={gitHub} alt="GitHub" />
                 Repositorio
               </a>
               <a
-                href="#"
+                href={detailProject.demo}
+                target="_blank"
                 className="flex h-11 items-center justify-center gap-2.5 rounded-md bg-contact text-xl"
               >
                 <img width={26} height={26} src={www} alt="Pagina web" />

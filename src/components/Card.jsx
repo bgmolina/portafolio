@@ -1,24 +1,27 @@
 import { useContext } from "react";
 import { GlobalContext } from "../Context";
-import { getBGImage, getOrienBGImage } from "../utils";
+import { getOrienBGImage } from "../utils";
 import { eye } from "../img";
 
 export const Card = (props) => {
-  const { tittle, cardImage, vertical } = props;
+  const { title, vertical, bgPreview } = props.data;
 
   //---------------
   // global context
   //---------------
-  const { onClickShowModal } = useContext(GlobalContext);
+  const { onClickShowModal, onClickDetailProject } = useContext(GlobalContext);
 
   return (
     <section className="h-36 w-60">
       {/* Background image */}
       <div
-        onClick={onClickShowModal}
+        onClick={() => {
+          onClickShowModal();
+          onClickDetailProject(props.data);
+        }}
         className={`h-3/4 rounded-t-2xl ${getOrienBGImage(
           vertical
-        )} ${getBGImage(cardImage)}`}
+        )} ${bgPreview}`}
       ></div>
 
       {/* Tittle */}
@@ -26,7 +29,7 @@ export const Card = (props) => {
         <figure>
           <img src={eye} />
         </figure>
-        <p className="h-full text-xl">{tittle}</p>
+        <p className="h-full text-xl">{title}</p>
       </div>
     </section>
   );
