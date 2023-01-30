@@ -7,6 +7,7 @@ import { Skills } from "./Skills.jsx";
 import { Tittle } from "./Tittle.jsx";
 import { Technology } from "./Technology.jsx";
 import { Contact } from "./Contact.jsx";
+import { Navbar } from "./Navbar.jsx";
 
 export {
   Stars,
@@ -18,4 +19,5 @@ export {
   Tittle,
   Technology,
   Contact,
+  Navbar,
 };

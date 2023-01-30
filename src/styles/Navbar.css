@@ -3,11 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-gray-900 pb-5
+  .titleHeader {
+    @apply rounded-full py-1 px-4
   };
 
-  html {
-    @apply scroll-smooth
-  }
 }

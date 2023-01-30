@@ -11,7 +11,7 @@ export const Menu = () => {
 
   return (
     <>
-      <figure className="w-full pl-5 pt-5">
+      <figure className="w-full pl-5 pt-5 md:hidden">
         <img id="idMenu" onClick={onClickShowSideBar} src={menu} />
       </figure>
       <SideBar />

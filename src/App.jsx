@@ -6,6 +6,7 @@ import {
   Projects,
   Skills,
   Contact,
+  Navbar,
 } from "./components";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <>
       <Stars />
       <Menu />
+      <Navbar />
       <Presentation />
       <Projects />
       <Skills />

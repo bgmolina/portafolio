@@ -28,9 +28,6 @@ export const SideBar = () => {
             <img src={salir} onClick={onClickShowSideBar} />
           </figure>
           <div className="flex flex-col items-center gap-y-10 pt-5 text-4xl text-white">
-            <a href="#" onClick={onClickShowSideBar}>
-              Inicio
-            </a>
             <a href="#idProjects" onClick={onClickShowSideBar}>
               Proyectos
             </a>
