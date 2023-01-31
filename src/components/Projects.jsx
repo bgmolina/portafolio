@@ -7,7 +7,7 @@ export const Projects = () => {
   //---------------
   // global context
   //---------------
-  const { dataProjects } = useContext(GlobalContext);
+  const { scrollStyle, dataProjects } = useContext(GlobalContext);
 
   return (
     <>
@@ -15,9 +15,9 @@ export const Projects = () => {
       <Tittle idValue="idProjects" value="Proyectos" />
 
       {/* Cards */}
-      <section className={`flex w-full justify-center px-5`}>
+      <section className={"flex w-full justify-center px-5"}>
         <section
-          className={`flex h-80 w-full max-w-lg flex-col flex-wrap items-center overflow-hidden overflow-x-scroll md:h-104 md:max-w-3xl`}
+          className={`flex h-96 w-full max-w-xl flex-col flex-wrap items-center overflow-hidden md:h-120 md:max-w-3xl ${scrollStyle}`}
         >
           {dataProjects.map((data, index) => (
             <Card key={index} data={data} />

@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .buttonDetaiProject {
+    @apply flex h-11 items-center justify-center gap-2.5 rounded-md bg-buttonDetailProject text-xl md:w-2/4
+  };
+}

@@ -21,23 +21,29 @@ module.exports = {
       },
       colors: {
         position: "#2CB67D",
+        scrollBG: "#293548",
+        scrollLine: "rgba(30, 41, 59, 0.5)",
       },
       borderColor: {
         tech: "#293548",
       },
       minWidth: {
         60: "15rem" /* 240px */,
+        64: "16rem" /* 256px */,
+        72: "18rem" /* 288px */,
+        80: "20rem" /* 320px */,
       },
       height: {
         104: "26rem" /* 416px */,
+        120: "30rem" /* 480px */,
       },
-
       backgroundColor: (theme) => ({
         ...theme("colors"),
         sidebar: "#1E293B",
         barTittle: "#2C66C3",
         tittleCard: "#293548",
         contact: "#161B22",
+        buttonDetailProject: "#14191F",
       }),
       dropShadow: {
         barTittle: "0 0 14px rgba(44, 102, 195, 0.5)",
@@ -47,5 +53,11 @@ module.exports = {
       roboto: ["Roboto", "sans-serif", "Segoe UI", "Ubuntu"],
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [
+    require("@tailwindcss/line-clamp"),
+    require("tailwind-scrollbar")({ nocompatible: true }),
+  ],
+  variants: {
+    scrollbar: ["rounded"],
+  },
 };

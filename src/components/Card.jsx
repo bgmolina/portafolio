@@ -12,7 +12,7 @@ export const Card = (props) => {
   const { onClickShowModal, onClickDetailProject } = useContext(GlobalContext);
 
   return (
-    <section className="h-36 w-2/4 min-w-60 p-2.5 md:h-48">
+    <section className="h-48 w-2/4 min-w-72 cursor-pointer p-2.5 md:h-60">
       {/* Background image */}
       <div
         onClick={() => {
@@ -29,7 +29,7 @@ export const Card = (props) => {
         <figure>
           <img src={eye} />
         </figure>
-        <p className="h-full text-xl">{title}</p>
+        <p className="flex h-full items-center text-xl">{title}</p>
       </div>
     </section>
   );

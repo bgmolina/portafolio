@@ -6,6 +6,8 @@ export const GlobalProvider = (props) => {
   //---------
   //variables
   //---------
+  const scrollStyle =
+    "overflow-x-scroll overscroll-x-contain whitespace-nowrap scrollbar-thin scrollbar-track-scrollBG scrollbar-thumb-scrollLine scrollbar-track-rounded-full scrollbar-thumb-rounded-full";
   const dataProjects = [
     {
       title: "Buzón de correo",
@@ -13,13 +15,7 @@ export const GlobalProvider = (props) => {
         "Sitio para leer cada correo recibido por usuario desde el BackEnd",
       vertical: false,
       bgPreview: "bg-mailboxPreview",
-      bgImages: [
-        "bg-mailboxDesktopGif",
-        "bg-mailboxMobileGif",
-        "bg-mailboxDesktop",
-        "bg-mailboxMobile",
-        "bg-mailboxJson",
-      ],
+      bgImages: ["bg-mailboxDesktop", "bg-mailboxMobile", "bg-mailboxJson"],
       repository: "https://github.com/bmolina1993/mailbox",
       demo: "https://bmolina1993.github.io/mailbox/",
     },
@@ -37,7 +33,7 @@ export const GlobalProvider = (props) => {
       description: "Sitio para cargar tareas pendientes",
       vertical: true,
       bgPreview: "bg-todoListPreview",
-      bgImages: ["bg-todoListMobileGif", "bg-todoListMobile"],
+      bgImages: ["bg-todoListMobile"],
       repository: "https://github.com/bmolina1993/todoReact",
       demo: "https://bmolina1993.github.io/todoReact/",
     },
@@ -109,6 +105,7 @@ export const GlobalProvider = (props) => {
   return (
     <GlobalContext.Provider
       value={{
+        scrollStyle,
         dataProjects,
         detailProject,
         setDetailProject,

@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { GlobalContext } from "../Context";
 import { Tittle, Technology } from "../components";
 import {
   docker,
@@ -18,13 +20,20 @@ import {
 } from "../img";
 
 export const Skills = () => {
+  //---------------
+  // global context
+  //---------------
+  const { scrollStyle } = useContext(GlobalContext);
+
   return (
     <>
       <Tittle idValue="idSkills" value="Habilidades" />
 
       {/* habilidades */}
       <section className={`flex w-full justify-center px-5`}>
-        <section className="flex h-80 w-full max-w-3xl flex-col flex-wrap content-start items-center gap-2.5 overflow-hidden overflow-x-scroll">
+        <section
+          className={`flex h-80 w-full max-w-3xl flex-col flex-wrap content-start items-center gap-2.5 overflow-hidden ${scrollStyle}`}
+        >
           <Technology name="Docker" src={docker} />
           <Technology name="Git" src={git} />
           <Technology name="Figma" src={figma} />
