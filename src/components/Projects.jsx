@@ -17,7 +17,7 @@ export const Projects = () => {
       {/* Cards */}
       <section className={`flex w-full justify-center px-5`}>
         <section
-          className={`flex h-80 w-full max-w-lg flex-col flex-wrap items-center gap-2.5 overflow-hidden overflow-x-scroll`}
+          className={`flex h-80 w-full max-w-lg flex-col flex-wrap items-center overflow-hidden overflow-x-scroll md:h-104 md:max-w-3xl`}
         >
           {dataProjects.map((data, index) => (
             <Card key={index} data={data} />

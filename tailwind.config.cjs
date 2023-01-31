@@ -25,6 +25,12 @@ module.exports = {
       borderColor: {
         tech: "#293548",
       },
+      minWidth: {
+        60: "15rem" /* 240px */,
+      },
+      height: {
+        104: "26rem" /* 416px */,
+      },
 
       backgroundColor: (theme) => ({
         ...theme("colors"),
