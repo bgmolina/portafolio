@@ -49,6 +49,6 @@ Desarrollado en figma bajo diseño atomico:
 👉 [`URL`](https://bmolina1993.github.io/portafolio/)
 
 ### Demo 🎬
-<img width="250" src="./demo/portafolioMobile.gif"/>
-<img width="330" src="./demo/tablet.webp"/>
-<img width="600" src="./demo/desktop.webp"/>
+<img width="250" src="./demo/portafolioMobile.gif"/>  
+<img width="330" src="./demo/tablet.webp"/>  
+<img width="600" src="./demo/desktop.webp"/>  
