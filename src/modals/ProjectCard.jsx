@@ -9,21 +9,14 @@ export const ProjectCard = () => {
   //---------------
   // global context
   //---------------
-  const {
-    showModal,
-    onClickShowModal,
-    detailProject,
-    scrollStyle,
-    pruebaScreen,
-  } = useContext(GlobalContext);
+  const { showModal, onClickShowModal, detailProject, scrollStyle } =
+    useContext(GlobalContext);
 
   //---------
   //funciones
   //---------
-  const handleClick = (event) => {
-    const id = event.target.id;
-    id === "modalCardDetail" && onClickShowModal();
-  };
+  const handleClick = (event) =>
+    event.target.id === "modalCardDetail" && onClickShowModal();
 
   return createPortal(
     <AnimatePresence>
@@ -37,22 +30,7 @@ export const ProjectCard = () => {
           <section
             onClick={onClickShowModal}
             className="flex h-full w-full md:hidden"
-            style={{
-              color: "white",
-              flexDirection: "column",
-              alignItems: "center",
-            }} //[x]
-          >
-            <p>availHeight: {pruebaScreen.availHeight}</p>
-            <p>availLeft: {pruebaScreen.availLeft}</p>
-            <p>availTop: {pruebaScreen.availTop}</p>
-            <p>availWidth: {pruebaScreen.availWidth}</p>
-            <p>colorDepth: {pruebaScreen.colorDepth}</p>
-            <p>height: {pruebaScreen.height}</p>
-            <p>isExtended: {pruebaScreen.isExtended}</p>
-            <p>pixelDepth: {pruebaScreen.pixelDepth}</p>
-            <p>width: {pruebaScreen.width}</p>
-          </section>
+          ></section>
 
           {/* modal info */}
           <motion.section

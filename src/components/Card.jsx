@@ -15,8 +15,8 @@ export const Card = (props) => {
     <section className="h-48 w-2/4 min-w-72 cursor-pointer p-2.5 md:h-60">
       {/* Background image */}
       <div
-        onClick={(event) => {
-          onClickShowModal(event);
+        onClick={() => {
+          onClickShowModal();
           onClickDetailProject(props.data);
         }}
         className={`h-3/4 rounded-t-2xl ${getOrienBGImage(

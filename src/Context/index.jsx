@@ -66,38 +66,11 @@ export const GlobalProvider = (props) => {
   const [showSideBar, setShowSideBar] = React.useState(false); //[menu mobile]
   const [showModal, setShowModal] = React.useState(false); //[card detalle mobile]
 
-  const defaultData = {
-    availHeight: null,
-    availLeft: null,
-    availTop: null,
-    availWidth: null,
-    colorDepth: null,
-    height: null,
-    isExtended: false,
-    pixelDepth: null,
-    width: null,
-  };
-  const [pruebaScreen, setPruebaScreen] = React.useState(defaultData); //[PRUEBA] [x]
-
   //---------
   //funciones
   //---------
-  const activeDisableBodyScrollY = (event) => {
+  const activeDisableBodyScrollY = () => {
     const body = document.querySelector("body");
-    const screen = event.view.screen;
-
-    //console.log(event.view.screen);
-    setPruebaScreen({
-      availHeight: screen.availHeight,
-      availLeft: screen.availLeft,
-      availTop: screen.availTop,
-      availWidth: screen.availWidth,
-      colorDepth: screen.colorDepth,
-      height: screen.height,
-      isExtended: screen.isExtended,
-      pixelDepth: screen.pixelDepth,
-      width: screen.width,
-    }); //[x]
 
     !body.style.overflowY
       ? (body.style.overflowY = "hidden")
@@ -106,12 +79,12 @@ export const GlobalProvider = (props) => {
 
   const onClickShowSideBar = () => {
     setShowSideBar((prevState) => !prevState);
-    activeDisableBodyScrollY();
+    //activeDisableBodyScrollY();
   }; //[menu mobile]
 
-  const onClickShowModal = (event) => {
+  const onClickShowModal = () => {
     setShowModal((prevState) => !prevState);
-    activeDisableBodyScrollY(event);
+    //activeDisableBodyScrollY();
   }; //[card detalle mobile]
 
   const onClickDetailProject = (data) => {
@@ -141,7 +114,6 @@ export const GlobalProvider = (props) => {
         onClickShowModal,
         showSideBar,
         onClickShowSideBar,
-        pruebaScreen, //[x]
       }}
     >
       {props.children}
