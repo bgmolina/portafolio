@@ -9,8 +9,13 @@ export const ProjectCard = () => {
   //---------------
   // global context
   //---------------
-  const { showModal, onClickShowModal, detailProject, scrollStyle } =
-    useContext(GlobalContext);
+  const {
+    showModal,
+    onClickShowModal,
+    detailProject,
+    scrollStyle,
+    pruebaScreen,
+  } = useContext(GlobalContext);
 
   //---------
   //funciones
@@ -32,7 +37,22 @@ export const ProjectCard = () => {
           <section
             onClick={onClickShowModal}
             className="flex h-full w-full md:hidden"
-          ></section>
+            style={{
+              color: "white",
+              flexDirection: "column",
+              alignItems: "center",
+            }} //[x]
+          >
+            <p>availHeight: {pruebaScreen.availHeight}</p>
+            <p>availLeft: {pruebaScreen.availLeft}</p>
+            <p>availTop: {pruebaScreen.availTop}</p>
+            <p>availWidth: {pruebaScreen.availWidth}</p>
+            <p>colorDepth: {pruebaScreen.colorDepth}</p>
+            <p>height: {pruebaScreen.height}</p>
+            <p>isExtended: {pruebaScreen.isExtended}</p>
+            <p>pixelDepth: {pruebaScreen.pixelDepth}</p>
+            <p>width: {pruebaScreen.width}</p>
+          </section>
 
           {/* modal info */}
           <motion.section
