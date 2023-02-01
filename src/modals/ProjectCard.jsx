@@ -42,7 +42,8 @@ export const ProjectCard = () => {
               y: "100%",
             }}
             transition={{ type: "just", bounce: 0, duration: 0.3 }}
-            className="flex w-full flex-col gap-5 rounded-t-xl bg-sidebar pb-5 text-white md:max-w-3xl md:rounded-b-xl md:pt-5"
+            // pb-5
+            className="flex w-full flex-col gap-5 rounded-t-xl bg-sidebar pb-10 text-white md:max-w-3xl md:rounded-b-xl md:pt-5"
           >
             {/* button close modal */}
             <button
@@ -83,14 +84,6 @@ export const ProjectCard = () => {
 
             {/* buttons */}
             <section className="flex flex-col gap-2.5 px-5 md:flex-row md:justify-center">
-              <a
-                href={detailProject.repository}
-                target="_blank"
-                className="buttonDetaiProject"
-              >
-                <img width={26} height={26} src={gitHub} alt="GitHub" />
-                Repositorio
-              </a>
               {detailProject.demo && (
                 <a
                   href={detailProject.demo}
@@ -101,6 +94,14 @@ export const ProjectCard = () => {
                   Demo
                 </a>
               )}
+              <a
+                href={detailProject.repository}
+                target="_blank"
+                className="buttonDetaiProject"
+              >
+                <img width={26} height={26} src={gitHub} alt="GitHub" />
+                Repositorio
+              </a>
             </section>
           </motion.section>
         </section>
