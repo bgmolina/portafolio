@@ -38,6 +38,19 @@ export const GlobalProvider = (props) => {
       demo: "https://bmolina1993.github.io/todoReact/",
     },
     {
+      title: "Portafolio Web",
+      description: "Web de proyectos desarrollados",
+      vertical: false,
+      bgPreview: "bg-portafolioPreview",
+      bgImages: [
+        "bg-portafolioDesktop",
+        "bg-portafolioMobile",
+        "bg-portafolioTablet",
+      ],
+      repository: "https://github.com/bmolina1993/portafolio",
+      demo: "https://bmolina1993.github.io/portafolio/",
+    },
+    {
       title: "Datos inmobiliarios",
       description:
         "Web scraping para extraer datos de sitio y exportarlo en Json/PostgreSQL",

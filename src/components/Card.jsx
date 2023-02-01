@@ -12,7 +12,7 @@ export const Card = (props) => {
   const { onClickShowModal, onClickDetailProject } = useContext(GlobalContext);
 
   return (
-    <section className="h-48 w-2/4 min-w-72 cursor-pointer p-2.5 md:h-60">
+    <section className="h-48 w-2/4 min-w-72 cursor-pointer p-2.5 md:h-60 lg:w-2/6">
       {/* Background image */}
       <div
         onClick={() => {
