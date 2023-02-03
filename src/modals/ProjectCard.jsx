@@ -42,7 +42,7 @@ export const ProjectCard = () => {
               y: "100%",
             }}
             transition={{ type: "just", bounce: 0, duration: 0.3 }}
-            className="flex w-full flex-col gap-5 rounded-t-xl bg-sidebar pb-16 text-white md:max-w-3xl md:rounded-b-xl md:pt-5"
+            className="flex w-full flex-col gap-5 rounded-t-xl bg-sidebar pb-20 text-white md:max-w-3xl md:rounded-b-xl md:pt-5 md:pb-5"
           >
             {/* button close modal */}
             <button

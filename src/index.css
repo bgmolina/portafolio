@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-gray-900 pb-5
+    @apply bg-gray-900 pb-20
   };
 
   html {
