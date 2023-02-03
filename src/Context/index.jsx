@@ -92,12 +92,12 @@ export const GlobalProvider = (props) => {
 
   const onClickShowSideBar = () => {
     setShowSideBar((prevState) => !prevState);
-    //activeDisableBodyScrollY();
+    activeDisableBodyScrollY();
   }; //[menu mobile]
 
   const onClickShowModal = () => {
     setShowModal((prevState) => !prevState);
-    //activeDisableBodyScrollY();
+    activeDisableBodyScrollY();
   }; //[card detalle mobile]
 
   const onClickDetailProject = (data) => {
