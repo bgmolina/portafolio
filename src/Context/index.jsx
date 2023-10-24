@@ -18,6 +18,7 @@ export const GlobalProvider = (props) => {
       bgImages: ["bg-mailboxDesktop", "bg-mailboxMobile", "bg-mailboxJson"],
       repository: "https://github.com/bmolina1993/mailbox",
       demo: "https://bmolina1993.github.io/mailbox/",
+      label: "FrontEnd",
     },
     {
       title: "Viajes",
@@ -27,6 +28,7 @@ export const GlobalProvider = (props) => {
       bgImages: ["bg-travelDesktop", "bg-travelMobile"],
       repository: "https://github.com/bmolina1993/travel",
       demo: "https://bmolina1993.github.io/travel/",
+      label: "FrontEnd",
     },
     {
       title: "To do list",
@@ -36,6 +38,7 @@ export const GlobalProvider = (props) => {
       bgImages: ["bg-todoListMobile"],
       repository: "https://github.com/bmolina1993/todoReact",
       demo: "https://bmolina1993.github.io/todoReact/",
+      label: "FrontEnd",
     },
     {
       title: "Portafolio Web",
@@ -49,6 +52,7 @@ export const GlobalProvider = (props) => {
       ],
       repository: "https://github.com/bmolina1993/portafolio",
       demo: "https://bmolina1993.github.io/portafolio/",
+      label: "FrontEnd",
     },
     {
       title: "Datos inmobiliarios",
@@ -59,6 +63,7 @@ export const GlobalProvider = (props) => {
       bgImages: ["bg-realEstatePreview"],
       repository: "https://github.com/bmolina1993/real-estate-visualization",
       demo: null,
+      label: "BackEnd",
     },
   ];
   const defaultDetailProject = {

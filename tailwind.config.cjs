@@ -37,6 +37,7 @@ module.exports = {
       height: {
         104: "26rem" /* 416px */,
         120: "30rem" /* 480px */,
+        122: "32rem" /* 512px */,
       },
       backgroundColor: (theme) => ({
         ...theme("colors"),

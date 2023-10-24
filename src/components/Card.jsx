@@ -2,9 +2,10 @@ import { useContext } from "react";
 import { GlobalContext } from "../Context";
 import { getOrienBGImage } from "../utils";
 import { eye } from "../img";
+import "../styles/Card.css";
 
 export const Card = (props) => {
-  const { title, vertical, bgPreview } = props.data;
+  const { title, vertical, bgPreview, label } = props.data;
 
   //---------------
   // global context
@@ -19,10 +20,14 @@ export const Card = (props) => {
           onClickShowModal();
           onClickDetailProject(props.data);
         }}
-        className={`h-3/4 rounded-t-2xl ${getOrienBGImage(
+
+        className={`h-3/4 rounded-t-2xl pl-2 pb-2 flex items-end ${getOrienBGImage(
           vertical
         )} ${bgPreview}`}
-      ></div>
+      >
+        {/* label */}
+        <div className={`rounded-full px-3 label-${label}`}>{label}</div>
+      </div>
 
       {/* Tittle */}
       <div className="flex h-1/4 items-center gap-x-2.5 rounded-b-2xl bg-tittleCard pl-2.5 text-white">

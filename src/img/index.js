@@ -21,6 +21,11 @@ import typeScript from "./typeScript.svg";
 import vue from "./vue.svg";
 import www from "./www.svg";
 import outlook from "./outlook.svg";
+import kubernetes from "./kubernetes.svg";
+import bash from "./bash.svg";
+import sequelize from "./sequelize.svg";
+import redis from "./redis.svg";
+import mysql from "./mysql.svg";
 
 export {
   menu,
@@ -46,4 +51,9 @@ export {
   vue,
   www,
   outlook,
+  kubernetes,
+  bash,
+  sequelize,
+  redis,
+  mysql,
 };

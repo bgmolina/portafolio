@@ -17,6 +17,11 @@ import {
   mongodb,
   mssql,
   postgresql,
+  kubernetes,
+  bash,
+  sequelize,
+  redis,
+  mysql,
 } from "../img";
 
 export const Skills = () => {
@@ -35,20 +40,21 @@ export const Skills = () => {
           className={`flex h-80 w-full max-w-3xl flex-col flex-wrap content-start items-center gap-2.5 overflow-hidden ${scrollStyle}`}
         >
           <Technology name="Docker" src={docker} />
+          <Technology name="Kubernetes" src={kubernetes} />
           <Technology name="Git" src={git} />
           <Technology name="Figma" src={figma} />
-          <Technology name="Node.Js" src={nodeJs} />
-          <Technology name="HTML 5" src={html} />
-          <Technology name="CSS 3" src={css} />
+          <Technology name="React" src={reactJs} />
           <Technology name="TailwindCSS" src={tailwindcss} />
+          <Technology name="Node.Js" src={nodeJs} />
           <Technology name="JavaScript" src={javascript} />
           <Technology name="TipeScript" src={typeScript} />
-          <Technology name="React" src={reactJs} />
-          <Technology name="Vue" src={vue} />
-          <Technology name="Nest.Js" src={nestJs} />
+          <Technology name="Sequelize" src={sequelize} />
+          <Technology name="Redis" src={redis} />
+          <Technology name="Bash" src={bash} />
           <Technology name="MongoDB" src={mongodb} />
           <Technology name="MSSQL" src={mssql} />
           <Technology name="PostgreSQL" src={postgresql} />
+          <Technology name="MySQL" src={mysql} />
         </section>
       </section>
     </>
