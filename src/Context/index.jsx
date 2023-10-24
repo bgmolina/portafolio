@@ -65,6 +65,17 @@ export const GlobalProvider = (props) => {
       demo: null,
       label: "BackEnd",
     },
+    {
+      title: "WordPress y MySQL",
+      description:
+        "Apliación en Kubernetes con base de datos (volumen persistente)",
+      vertical: false,
+      bgPreview: "bg-wpHomePreview",
+      bgImages: ["bg-wpHomeDesktop","bg-wpBashDesktop","bg-wpK8sDesktop","bg-wpDbK8sDesktop"],
+      repository: "https://github.com/bmolina1993/k8s-wordpress-mysql",
+      demo: null,
+      label: "Kubernetes",
+    },
   ];
   const defaultDetailProject = {
     title: null,

@@ -19,6 +19,11 @@ module.exports = {
         portafolioDesktop: "url('/portafolioDesktop.webp')",
         portafolioMobile: "url('/portafolioMobile.webp')",
         portafolioTablet: "url('/portafolioTablet.webp')",
+        wpHomePreview: "url('/wpHomePreview.webp')",
+        wpHomeDesktop: "url('/wpHomeDesktop.webp')",
+        wpBashDesktop: "url('/wpBashDesktop.webp')",
+        wpK8sDesktop: "url('/wpK8sDesktop.webp')",
+        wpDbK8sDesktop: "url('/wpDbK8sDesktop.webp')",
       },
       colors: {
         position: "#2CB67D",
