@@ -13,7 +13,8 @@
   "license": "MIT",
   "dependencies": {
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "vite": "4.0.0"
   },
   "devDependencies": {
     "@tailwindcss/line-clamp": "0.4.2",
@@ -27,8 +28,7 @@
     "prettier": "2.8.3",
     "prettier-plugin-tailwindcss": "0.2.1",
     "tailwind-scrollbar": "2.1.0",
-    "tailwindcss": "3.2.4",
-    "vite": "4.0.0"
+    "tailwindcss": "3.2.4"
   },
   "homepage": "https://bmolina1993.github.io/portafolio/"
 }
