@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portafolio
+  namespace: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: portafolio
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: portafolio
+    spec:
+      containers:
+      - image: bgmolina/portafolio:latest
+        name: portafolio
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "125m" # 0.125 core
+          limits:
+            memory: "128Mi"
+            cpu: "250m" # 0.25 core
+        ports:
+          - containerPort: 80
