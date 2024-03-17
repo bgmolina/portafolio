@@ -20,10 +20,10 @@ spec:
         name: portafolio
         resources:
           requests:
-            memory: "64Mi"
+            memory: "32Mi"
             cpu: "125m" # 0.125 core
           limits:
-            memory: "128Mi"
+            memory: "64Mi"
             cpu: "250m" # 0.25 core
         ports:
           - containerPort: 80
