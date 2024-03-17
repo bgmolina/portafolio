@@ -21,25 +21,21 @@ while true; do
     "1")
       ARGS="apply"
       NAMESPACE="web"
-      # echo ""
-      # bash database/deployment.sh $ARGS
-      # echo ""
+      echo ""
       echo "[Portafolio] Deploying services...🚀"
       if ! kubectl get namespace "$NAMESPACE" &> /dev/null; then
         kubectl $ARGS -f namespace.yml
       fi
-      # kubectl $ARGS -f config-map.yml
-      # kubectl $ARGS -f secret.yml
       kubectl $ARGS -f service.yml
       kubectl $ARGS -f deployment.yml
-      kubectl $ARGS -f ingress.yml
+      # kubectl $ARGS -f ingress.yml
 
-      # echo ""
-      # echo "App running at 🌐:"
-      # echo "- Local:   http://localhost:3000/"
-      # echo "- Network: http://127.0.0.1:3000/"
-      # echo ""
-      # echo "Checking if pods is ready 👀 and running port-forward...🔎"
+      echo ""
+      echo "App running at 🌐:"
+      echo "- Local:   http://localhost:3000/"
+      echo "- Network: http://127.0.0.1:3000/"
+      echo ""
+      echo "Checking if pods is ready 👀 and running port-forward...🔎"
       # check if pod with label app=portafolio and namespace=web is ready when deploying and
       # forward port 3000 to 80 (server) for testing purposes only (not for production)
       # wait for 60 seconds.
@@ -51,15 +47,10 @@ while true; do
     "2")
       ARGS="delete"
       echo ""
-      # bash database/deployment.sh $ARGS
-      # echo ""
       echo "[Portafolio] Removing services...🙃"
-      kubectl $ARGS -f ingress.yml
+      # kubectl $ARGS -f ingress.yml
       kubectl $ARGS -f deployment.yml
       kubectl $ARGS -f service.yml
-      # kubectl $ARGS -f config-map.yml
-      # kubectl $ARGS -f secret.yml
-      # kubectl $ARGS -f namespace.yml
 
       exit 0
       ;;
