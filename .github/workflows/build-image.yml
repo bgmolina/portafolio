@@ -12,7 +12,7 @@ env:
   TAG: ''
 
 jobs:
-  docker:
+  build-image:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
