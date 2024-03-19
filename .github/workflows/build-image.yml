@@ -1,4 +1,4 @@
-name: Build image|Docker hub
+name: Build image | Docker hub
 
 run-name: ${{ github.actor }} Build and push image to Docker Hub 🚀
 
@@ -7,20 +7,12 @@ on:
     branches:
       - testing
       - main
-  pull_request:
-    branches:
-      - testing
-      - main
-    types:
-      - closed
 
 env:
   TAG: ''
 
 jobs:
   docker:
-    # only run on event push or pull request merged
-    if: ${{ github.event_name }} == 'push' || ${{ github.event.pull_request.merged }} == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
