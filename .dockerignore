@@ -1,3 +1,10 @@
+### Custom ignore ###
+*.md
+docker
+demo
+.github
+.git
+
 # Created by https://www.toptal.com/developers/gitignore/api/git,node,linux,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=git,node,linux,visualstudiocode
 
