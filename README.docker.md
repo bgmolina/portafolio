@@ -49,7 +49,7 @@ $ bash deployment.sh
 2) Delete on development mode 🗑️
 3) Deploy on production mode 🚀
 4) Delete on production mode 🗑️
-5) Salir 👋
+5) Quit 👋
 Select an option and press Enter 👆: 
 ```
 
