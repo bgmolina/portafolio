@@ -68,6 +68,9 @@ $ docker images
 | portafolio      | 1.0.0              | ~41MB  |
 
 ### Contenedor
+```bash
+$ docker ps
+```
 | NAME            | PORTS                  |
 | --------------- | ---------------------- |
 | portafolio      | 0.0.0.0:3000->5173/tcp |
