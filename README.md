@@ -38,6 +38,15 @@
   </a>
 </p>
 
+
+## 👇 Ejecución con Docker
+<a href="README.docker.md">
+  <img
+    src="https://img.shields.io/badge/Docker-086dd7?style=for-the-badge&logoColor=white&logo=docker"
+    alt="Docker"
+  />
+</a>
+
 ## Interfaz de usuario (UI) 
 Desarrollado en figma bajo diseño atomico:  
 🌐 Proyecto: 👉 [`URL`](https://www.figma.com/community/file/1202589711092010403)  
@@ -45,8 +54,8 @@ Desarrollado en figma bajo diseño atomico:
 💻 Prototipo Desktop: 👉 [`URL`](https://www.figma.com/proto/npBr1CTsA8zQma2iwPEzA6/Portafolio?node-id=161%3A2421&scaling=scale-down&page-id=150%3A1867&starting-point-node-id=161%3A2421)  
 
 
-## Link proyecto 🌐
-👉 [`URL`](https://bmolina1993.github.io/portafolio/)
+<!-- ## Link proyecto 🌐
+👉 [`URL`](https://bmolina1993.github.io/portafolio/) -->
 
 ### Demo 🎬
 <img width="250" src="./demo/portafolioMobile.gif"/>  
