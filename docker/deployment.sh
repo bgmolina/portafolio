@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "======================="
-echo " Portafolio deployment "
-echo "======================="
+echo "=========================="
+echo " Portafolio deployment 💼 "
+echo "=========================="
 
 PS3="Select an option and press Enter 👆: "
 OPTIONS=("Deploy on development mode 🛠" "Delete on development mode 🗑️" "Deploy on production mode 🚀" "Delete on production mode 🗑️" "Quit 👋")
