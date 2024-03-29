@@ -41,18 +41,16 @@ jobs:
           tags: ${{github.repository}}:${{env.TAG}}
 
   connect-to-server:
-    name: Restart-service
+    name: restart-service
     runs-on: ubuntu-latest
     needs: build-image
     steps:
-      - name: Restart-service
+      - name: Restart service
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
-          key: ${{ secrets.SSH_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            echo ${{ secrets.HOST }};
-            echo ${{ secrets.SSH_KEY }};
             ls -al;
