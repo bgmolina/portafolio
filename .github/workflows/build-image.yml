@@ -54,7 +54,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             if [ ${{ github.ref_name }} == 'main' ]; then
-              kubectl rollout restart deployment portafolio -n web;
+              microk8s kubectl rollout restart deployment portafolio -n web;
             else
-              kubectl rollout restart deployment portafolio -n web-testing;
+              microk8s kubectl rollout restart deployment portafolio -n web-testing;
             fi
