@@ -39,3 +39,15 @@ jobs:
           context: .
           push: true
           tags: ${{github.repository}}:${{env.TAG}}
+      - name: Restart service on server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            kubectl get namespaces
+
+# docker pull ${{github.repository}}:${{env.TAG}}
+# docker run -d -p 80:80 ${{github.repository}}:${{env.TAG}}
