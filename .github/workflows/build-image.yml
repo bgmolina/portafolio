@@ -39,3 +39,22 @@ jobs:
           context: .
           push: true
           tags: ${{github.repository}}:${{env.TAG}}
+
+  connect-to-server:
+    name: restart-service
+    runs-on: ubuntu-latest
+    needs: build-image
+    steps:
+      - name: Restart service
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            if [ ${{ github.ref_name }} == 'main' ]; then
+              microk8s kubectl rollout restart deployment portafolio -n web;
+            else
+              microk8s kubectl rollout restart deployment portafolio -n web-testing;
+            fi
