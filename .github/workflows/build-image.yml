@@ -43,16 +43,14 @@ jobs:
   connect-to-server:
     name: Build
     runs-on: ubuntu-latest
+    needs: build-image
     steps:
       - name: Restart service
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.PORT }}
           script: |
             ls -al
-
-# key: ${{ secrets.SSH_KEY }}
-# docker pull ${{github.repository}}:${{env.TAG}}
-# docker run -d -p 80:80 ${{github.repository}}:${{env.TAG}}
