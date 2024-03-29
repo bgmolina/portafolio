@@ -51,7 +51,7 @@ export const GlobalProvider = (props) => {
         "bg-portafolioTablet",
       ],
       repository: "https://github.com/bmolina1993/portafolio",
-      demo: "https://bmolina1993.github.io/portafolio/",
+      demo: "https://bgma.tech/",
       label: "FrontEnd",
     },
     {
