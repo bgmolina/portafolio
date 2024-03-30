@@ -27,7 +27,7 @@ export const GlobalProvider = (props) => {
       bgPreview: "bg-travelPreview",
       bgImages: ["bg-travelDesktop", "bg-travelMobile"],
       repository: "https://github.com/bmolina1993/travel",
-      demo: "https://bmolina1993.github.io/travel/",
+      demo: "https://testing-travel.bgma.tech",
       label: "FrontEnd",
     },
     {
