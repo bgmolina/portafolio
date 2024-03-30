@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portafolio
+  namespace: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: portafolio
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0 # every pod must be available during the update
+  template:
+    metadata:
+      labels:
+        app: portafolio
+    spec:
+      containers:
+      - image: bgmolina/portafolio:testing
+        name: portafolio
+        resources:
+          requests:
+            memory: "8Mi"
+            cpu: "50m" # 5% of core
+          limits:
+            memory: "16Mi"
+            cpu: "100m" # 10% of core
+        ports:
+          - containerPort: 80
