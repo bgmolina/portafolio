@@ -39,11 +39,19 @@
 </p>
 
 
-## 👇 Ejecución con Docker
+<!-- ## 👇 Ejecución con Docker / k8s -->
+## 👇 Contenedores / Orquestación
+<!-- ## 👇 Ejecución con Docker -->
 <a href="README.docker.md">
   <img
     src="https://img.shields.io/badge/Docker-086dd7?style=for-the-badge&logoColor=white&logo=docker"
     alt="Docker"
+  />
+</a>
+<a href="README.k8s.md">
+  <img
+    src="https://img.shields.io/badge/kubernetes-326DE6?style=for-the-badge&logoColor=white&logo=kubernetes"
+    alt="Kubernetes"
   />
 </a>
 
