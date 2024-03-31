@@ -37,7 +37,7 @@ export const GlobalProvider = (props) => {
       bgPreview: "bg-todoListPreview",
       bgImages: ["bg-todoListMobile"],
       repository: "https://github.com/bmolina1993/todoReact",
-      demo: "https://todolist.bgma.tech",
+      demo: "https://testing-todolist.bgma.tech",
       label: "FrontEnd",
     },
     {
