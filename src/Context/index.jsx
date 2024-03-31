@@ -54,17 +54,17 @@ export const GlobalProvider = (props) => {
       demo: "https://bgma.tech/",
       label: "FrontEnd",
     },
-    {
-      title: "Datos inmobiliarios",
-      description:
-        "Web scraping para extraer datos de sitio y exportarlo en Json/PostgreSQL",
-      vertical: true,
-      bgPreview: "bg-realEstatePreview",
-      bgImages: ["bg-realEstatePreview"],
-      repository: "https://github.com/bmolina1993/real-estate-visualization",
-      demo: null,
-      label: "BackEnd",
-    },
+    // {
+    //   title: "Datos inmobiliarios",
+    //   description:
+    //     "Web scraping para extraer datos de sitio y exportarlo en Json/PostgreSQL",
+    //   vertical: true,
+    //   bgPreview: "bg-realEstatePreview",
+    //   bgImages: ["bg-realEstatePreview"],
+    //   repository: "https://github.com/bmolina1993/real-estate-visualization",
+    //   demo: null,
+    //   label: "BackEnd",
+    // },
     {
       title: "WordPress y MySQL",
       description:
