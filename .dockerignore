@@ -1,6 +1,7 @@
 ### Custom ignore ###
 *.md
 docker
+kubernetes
 demo
 .github
 .git
