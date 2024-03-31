@@ -25,7 +25,7 @@ while true; do
       echo ""
       echo "Deploying services...🚀"
       if ! microk8s kubectl get namespace "$NAMESPACE" &> /dev/null; then
-        microk8s kubectl $ARGS -f ./namespace.yml
+        microk8s kubectl $ARGS -f namespace.yml
       fi
       microk8s kubectl $ARGS -f service.yml
       microk8s kubectl $ARGS -f deployment.yml
