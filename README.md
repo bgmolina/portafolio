@@ -38,10 +38,7 @@
   </a>
 </p>
 
-
-<!-- ## 👇 Ejecución con Docker / k8s -->
 ## 👇 Contenedores / Orquestación
-<!-- ## 👇 Ejecución con Docker -->
 <a href="README.docker.md">
   <img
     src="https://img.shields.io/badge/Docker-086dd7?style=for-the-badge&logoColor=white&logo=docker"
