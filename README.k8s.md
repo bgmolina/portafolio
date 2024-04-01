@@ -15,8 +15,7 @@
 #### Puerto habilitado
 - [**30000**](http://localhost:30000)
 
-
-#### Menu de acciones disponibles
+#### Menu de opciones 📋
 ```bash
 $ bash deployment.sh
 ```
@@ -34,16 +33,14 @@ Select an option and press Enter 👆:
 ### Demo 🎬
 <img width="500" src="./demo/kubernetes.gif"/>
 
-
 ## Información relevante 📑
 ### Deployment
 ```bash
 $ kubectl get deployment -n web
 ```
-| NAME       | IMAGES              |
-| ---------- | ------------------- |
-| portafolio | bgmolina/portafolio |
-
+| NAME       | IMAGES                      |
+| ---------- | --------------------------- |
+| portafolio | bgmolina/portafolio:testing |
 
 ### Service
 ```bash
