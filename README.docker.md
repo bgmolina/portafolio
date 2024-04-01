@@ -36,8 +36,7 @@
 - [**3000**](http://localhost:3000) para desarrollo
 - [**4000**](http://localhost:4000) para producción
 
-
-#### Menu de acciones disponibles
+#### Menu de opciones 📋
 ```bash
 $ bash deployment.sh
 ```
@@ -55,7 +54,6 @@ Select an option and press Enter 👆:
 
 ### Demo 🎬
 <img width="500" src="./demo/docker.gif"/>
-
 
 ## Información relevante 📑
 ### Imagen
