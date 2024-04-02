@@ -17,8 +17,9 @@ export const GlobalProvider = (props) => {
       bgPreview: "bg-mailboxPreview",
       bgImages: ["bg-mailboxDesktop", "bg-mailboxMobile", "bg-mailboxJson"],
       repository: "https://github.com/bmolina1993/mailbox",
-      demo: "https://bmolina1993.github.io/mailbox/",
-      label: "FrontEnd",
+      demo: "https://testing-mailbox.bgma.tech",
+      label: ["FrontEnd", "Kubernetes", "Docker"],
+      order: 2,
     },
     {
       title: "Viajes",
@@ -28,7 +29,8 @@ export const GlobalProvider = (props) => {
       bgImages: ["bg-travelDesktop", "bg-travelMobile"],
       repository: "https://github.com/bmolina1993/travel",
       demo: "https://testing-travel.bgma.tech",
-      label: "FrontEnd",
+      label: ["FrontEnd", "Kubernetes", "Docker"],
+      order: 3,
     },
     {
       title: "To do list",
@@ -38,7 +40,8 @@ export const GlobalProvider = (props) => {
       bgImages: ["bg-todoListMobile"],
       repository: "https://github.com/bmolina1993/todoReact",
       demo: "https://testing-todolist.bgma.tech",
-      label: "FrontEnd",
+      label: ["FrontEnd", "Kubernetes", "Docker"],
+      order: 5,
     },
     {
       title: "Portafolio Web",
@@ -52,7 +55,8 @@ export const GlobalProvider = (props) => {
       ],
       repository: "https://github.com/bmolina1993/portafolio",
       demo: "https://portafolio-testing.bgma.tech/",
-      label: "FrontEnd",
+      label: ["FrontEnd", "Kubernetes", "Docker"],
+      order: 4,
     },
     // {
     //   title: "Datos inmobiliarios",
@@ -74,7 +78,8 @@ export const GlobalProvider = (props) => {
       bgImages: ["bg-wpHomeDesktop","bg-wpBashDesktop","bg-wpK8sDesktop","bg-wpDbK8sDesktop"],
       repository: "https://github.com/bmolina1993/k8s-wordpress-mysql",
       demo: null,
-      label: "Kubernetes",
+      label: ["Kubernetes"],
+      order: 1,
     },
   ];
   const defaultDetailProject = {
