@@ -7,6 +7,10 @@ on:
     branches:
       - testing
       - main
+    paths-ignore:
+      - '*.md' # Ignore changes to readme files in the repository root
+      - '**/*.md' # Ignore changes to readme files in any subdirectory
+      - '.github/**' # Ignore changes to files in the .github directory
 
 env:
   TAG: ''
