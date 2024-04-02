@@ -26,7 +26,13 @@ export const Card = (props) => {
         )} ${bgPreview}`}
       >
         {/* label */}
-        <div className={`rounded-full px-3 label-${label}`}>{label}</div>
+        <ul className="gap-2 flex flex-col">
+          {
+            label.map((element, index) => (
+              <li key={index} className={`rounded-full px-3 label-${element}`}>{element}</li>
+            ))
+          }
+        </ul>
       </div>
 
       {/* Tittle */}

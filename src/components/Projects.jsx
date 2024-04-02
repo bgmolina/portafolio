@@ -8,6 +8,8 @@ export const Projects = () => {
   // global context
   //---------------
   const { scrollStyle, dataProjects } = useContext(GlobalContext);
+  // sort by order field
+  dataProjects.sort((a, b) => a.order - b.order);
 
   return (
     <>
