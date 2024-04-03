@@ -11,6 +11,7 @@ on:
       - '*.md' # Ignore changes to readme files in the repository root
       - '**/*.md' # Ignore changes to readme files in any subdirectory
       - '.github/**' # Ignore changes to files in the .github directory
+      - 'demo/**' # Ignore changes to files in the demo directory
 
 env:
   TAG: ''
