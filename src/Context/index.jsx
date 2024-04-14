@@ -10,6 +10,7 @@ export const GlobalProvider = (props) => {
     "overflow-x-scroll overscroll-x-contain whitespace-nowrap scrollbar-thin scrollbar-track-scrollBG scrollbar-thumb-scrollLine scrollbar-track-rounded-full scrollbar-thumb-rounded-full";
   const dataProjects = [
     {
+      idCard: "idMailbox",
       title: "Buzón de correo",
       description:
         "Sitio para leer cada correo recibido por usuario desde el BackEnd",
@@ -22,6 +23,7 @@ export const GlobalProvider = (props) => {
       order: 2,
     },
     {
+      idCard: "idTravel",
       title: "Viajes",
       description: "Sitio de alquiler",
       vertical: false,
@@ -33,6 +35,7 @@ export const GlobalProvider = (props) => {
       order: 3,
     },
     {
+      idCard: "idTodoList",
       title: "To do list",
       description: "Sitio para cargar tareas pendientes",
       vertical: true,
@@ -44,6 +47,7 @@ export const GlobalProvider = (props) => {
       order: 5,
     },
     {
+      idCard: "idPortafolio",
       title: "Portafolio Web",
       description: "Web de proyectos desarrollados",
       vertical: false,
@@ -70,12 +74,18 @@ export const GlobalProvider = (props) => {
     //   label: "BackEnd",
     // },
     {
+      idCard: "idK8sMySQL",
       title: "WordPress y MySQL",
       description:
         "Apliación en Kubernetes con base de datos (volumen persistente)",
       vertical: false,
       bgPreview: "bg-wpHomePreview",
-      bgImages: ["bg-wpHomeDesktop","bg-wpBashDesktop","bg-wpK8sDesktop","bg-wpDbK8sDesktop"],
+      bgImages: [
+        "bg-wpHomeDesktop",
+        "bg-wpBashDesktop",
+        "bg-wpK8sDesktop",
+        "bg-wpDbK8sDesktop",
+      ],
       repository: "https://github.com/bmolina1993/k8s-wordpress-mysql",
       demo: null,
       label: ["Kubernetes"],

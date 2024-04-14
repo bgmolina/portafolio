@@ -27,7 +27,7 @@ module.exports = {
       },
       colors: {
         position: "#2CB67D",
-        scrollBG: "#293548",
+        scrollBG: "#2f3c51",
         scrollLine: "rgba(30, 41, 59, 0.5)",
       },
       borderColor: {

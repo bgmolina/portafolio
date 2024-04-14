@@ -26,7 +26,7 @@ export const Presentation = () => {
           {position}
         </p>
       </article>
-      <img src={monitor} className="w-64 pt-10" />
+      <img src={monitor} className="w-64 pt-10" alt="monitor" />
     </section>
   );
 };
