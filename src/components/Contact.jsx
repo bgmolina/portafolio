@@ -19,7 +19,7 @@ export const Contact = () => {
         </figure>
 
         <figure className="contactIcon">
-          <a href="https://github.com/bmolina1993" target="_blank" rel="github">
+          <a href="https://github.com/bgmolina" target="_blank" rel="github">
             <img id="idGitHub" src={gitHub} alt="gitHub" />
           </a>
         </figure>
