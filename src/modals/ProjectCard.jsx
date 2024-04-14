@@ -85,7 +85,7 @@ export const ProjectCard = () => {
             <section className="flex flex-col gap-2.5 px-5 md:flex-row md:justify-center">
               {detailProject.demo && (
                 <a
-                  id="idDemo"
+                  id={`${detailProject.idCard}Demo`}
                   href={detailProject.demo}
                   target="_blank"
                   className="buttonDetaiProject"
@@ -95,7 +95,7 @@ export const ProjectCard = () => {
                 </a>
               )}
               <a
-                id="idRepository"
+                id={`${detailProject.idCard}Repo`}
                 href={detailProject.repository}
                 target="_blank"
                 className="buttonDetaiProject"

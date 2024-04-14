@@ -93,6 +93,7 @@ export const GlobalProvider = (props) => {
     },
   ];
   const defaultDetailProject = {
+    idCard: null,
     title: null,
     description: null,
     vertical: false,
@@ -133,6 +134,7 @@ export const GlobalProvider = (props) => {
 
   const onClickDetailProject = (data) => {
     setDetailProject({
+      idCard: data.idCard,
       title: data.title,
       description: data.description,
       vertical: data.vertical,
