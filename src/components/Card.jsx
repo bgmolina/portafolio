@@ -5,7 +5,7 @@ import { eye } from "../img";
 import "../styles/Card.css";
 
 export const Card = (props) => {
-  const { title, vertical, bgPreview, label } = props.data;
+  const { title, vertical, bgPreview, label, idCard } = props.data;
 
   //---------------
   // global context
@@ -20,25 +20,25 @@ export const Card = (props) => {
           onClickShowModal();
           onClickDetailProject(props.data);
         }}
-
-        className={`h-3/4 rounded-t-2xl pl-2 pb-2 flex items-end ${getOrienBGImage(
+        id={idCard}
+        className={`flex h-3/4 items-end rounded-t-2xl pl-2 pb-2 ${getOrienBGImage(
           vertical
         )} ${bgPreview}`}
       >
         {/* label */}
-        <ul className="gap-2 flex flex-col">
-          {
-            label.map((element, index) => (
-              <li key={index} className={`rounded-full px-3 label-${element}`}>{element}</li>
-            ))
-          }
+        <ul className="flex flex-col gap-2">
+          {label.map((element, index) => (
+            <li key={index} className={`rounded-full px-3 label-${element}`}>
+              {element}
+            </li>
+          ))}
         </ul>
       </div>
 
       {/* Tittle */}
       <div className="flex h-1/4 items-center gap-x-2.5 rounded-b-2xl bg-tittleCard pl-2.5 text-white">
         <figure>
-          <img src={eye} />
+          <img src={eye} width={21} height={21} alt="eye" />
         </figure>
         <p className="flex h-full items-center text-xl">{title}</p>
       </div>

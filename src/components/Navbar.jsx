@@ -20,6 +20,7 @@ export const Navbar = () => {
     <header className="hidden md:flex md:justify-end md:p-5">
       <nav className="flex gap-2.5 text-xl text-white">
         <motion.a
+          id="idBtnProjects"
           variants={hoverButton}
           whileHover="hover"
           href="#idProjects"
@@ -28,6 +29,7 @@ export const Navbar = () => {
           Proyectos
         </motion.a>
         <motion.a
+          id="idBtnSkills"
           variants={hoverButton}
           whileHover="hover"
           href="#idSkills"
@@ -36,6 +38,7 @@ export const Navbar = () => {
           Habilidades
         </motion.a>
         <motion.a
+          id="idBtnContact"
           variants={hoverButton}
           whileHover="hover"
           href="#idContact"
