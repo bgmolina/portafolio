@@ -1,23 +1,23 @@
 .label-FrontEnd {
-  background-color: #CFFAFE;
-  border: 1px solid #A5F3FC;
-  color: #0891B2;
+  background-color: #cffafe;
+  border: 1px solid #a5f3fc;
+  color: #06789b;
 }
 
 .label-BackEnd {
-  background-color: #ECFDCB;
-  border: 1px solid #D9F99D;
-  color: #65A30D;
+  background-color: #ecfdcb;
+  border: 1px solid #d9f99d;
+  color: #65a30d;
 }
 
 .label-Docker {
-  background-color: #CDF2FE;
-  border: 1px solid #B3EBFE;
-  color: #0296C9;
+  background-color: #cdf2fe;
+  border: 1px solid #b3ebfe;
+  color: #03758e;
 }
 
 .label-Kubernetes {
-  background-color: #D2DEF9;
-  border: 1px solid #BBCEF6;
-  color: #326DE5;
+  background-color: #d2def9;
+  border: 1px solid #bbcef6;
+  color: #3261ae;
 }
