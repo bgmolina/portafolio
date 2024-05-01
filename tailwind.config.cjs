@@ -24,6 +24,8 @@ module.exports = {
         wpBashDesktop: "url('/wpBashDesktop.webp')",
         wpK8sDesktop: "url('/wpK8sDesktop.webp')",
         wpDbK8sDesktop: "url('/wpDbK8sDesktop.webp')",
+        goApiPreview: "url('/goApiPreview.webp')",
+        goApiDesktop: "url('/goApiDesktop.webp')",
       },
       colors: {
         position: "#2CB67D",
