@@ -70,7 +70,7 @@ export const GlobalProvider = (props) => {
       bgPreview: "bg-goApiPreview",
       bgImages: ["bg-goApiDesktop"],
       repository: "https://github.com/bgmolina/go-fiber",
-      demo: null,
+      demo: "https://go-fiber.bgma.tech/docs",
       label: ["BackEnd", "Docker"],
       order: 3,
     },
